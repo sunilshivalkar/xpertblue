@@ -25,17 +25,7 @@ class AboutUs extends Component{
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Lorem IpSum Lorem IpSum Lorem IpSum Lorem IpSum Lorem IpSum Lorem IpSum Lorem IpSum Lorem IpSum Lorem IpSum 
-
             </Typography>
-            <div>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Click Here
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
           </Container>
         </div>
 		);

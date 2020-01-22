@@ -8,6 +8,11 @@ import Button from '@material-ui/core/Button';
 import Drawer from '@material-ui/core/Drawer';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+
 const styles = theme => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1
@@ -25,7 +30,9 @@ class Header extends Component {
     super();
     this.state = {open: false};
   }
- 
+  openLoginForm = () => {
+    alert("Due to lack of time added Alert");
+  }
   handleToggle = () => this.setState({open: !this.state.open});
 	render(){
 		const { classes } = this.props; 
@@ -41,8 +48,8 @@ class Header extends Component {
               </Typography>
 
             </div>
-            <Button color="inherit">Login</Button>
-            <Button color="inherit">Signup</Button>
+            <Button color="inherit" onClick={this.openLoginForm} >Login</Button>
+            <Button color="inherit" onClick={this.openLoginForm} >Sign Up</Button>
           </Toolbar>
         </AppBar>
               <Drawer
