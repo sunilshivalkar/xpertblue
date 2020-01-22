@@ -31,7 +31,7 @@ class Header extends Component {
     this.state = {open: false};
   }
   openLoginForm = () => {
-    alert("Due to lack of time added Alert");
+    alert("In Progress");
   }
   handleToggle = () => this.setState({open: !this.state.open});
 	render(){
